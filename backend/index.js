@@ -6,11 +6,11 @@ const app = express();
 const bodyParser = require('body-parser');
 const port = 3900;
 dotenv.config();
-
+//this is not a game
 mongooes.connect(process.env.MONGO_URI)
 .then(()=>{console.log(" mongodb successfully connected");})
 .catch(()=>console.log("not connected"))
-  
+app.use(bodyparse);
 app.use(bodyParser.json());
 app.use('/vendor',vendorRoutes);
 
