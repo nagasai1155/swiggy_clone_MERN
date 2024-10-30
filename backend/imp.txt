@@ -1,0 +1,21 @@
+//step1 :dependencies i have used in this backend project are
+1.express
+2.mongooes
+3.dotenv
+4.nodemon
+5.body parser
+6.jwt token(email ne token's laga change )
+7.bcrypt 
+
+
+step-2 :
+1.connection to mongodb from cloud cluster
+
+step 3:
+1.modals
+ 1.1:->vendor:username,email,password
+
+2.controllers
+  2.1 vendorControllers ->to save the properties of schema in databases
+3.routers
+ 3.1 vendorRouts
