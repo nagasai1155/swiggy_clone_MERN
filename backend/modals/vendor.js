@@ -1,5 +1,5 @@
-const mongooes = require('mongoose');
-const VendorSchema = new mongooes.Schema({
+const mongoose = require('mongoose');
+const VendorSchema = new mongoose.Schema({
     username:{
         type:String,
         require:true
@@ -12,7 +12,13 @@ const VendorSchema = new mongooes.Schema({
     password:{
         type:String,
         required:true
-    }
+    },
+    firm:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'Firm'
+        }
+    ]
 
 });
 const Vendor = mongooes.model('Vendor',VendorSchema);

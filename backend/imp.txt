@@ -14,8 +14,11 @@ step-2 :
 step 3:
 1.modals
  1.1:->vendor:username,email,password
+ 1.2:->firm :name,address,category,region,offer,image
 
 2.controllers
   2.1 vendorControllers ->to save the properties of schema in databases
+
+
 3.routers
- 3.1 vendorRouts
+ 3.1 vendorRoutes
