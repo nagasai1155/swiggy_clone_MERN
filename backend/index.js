@@ -10,7 +10,10 @@ dotenv.config();
 mongooes.connect(process.env.MONGO_URI)
 .then(()=>{console.log(" mongodb successfully connected");})
 .catch(()=>console.log("not connected"))
-app.use(bodyparse);
+app.use(bodyParser.json());
+//this is very
+//important router to save the data in the mongodb
+
 app.use(bodyParser.json());
 app.use('/vendor',vendorRoutes);
 
